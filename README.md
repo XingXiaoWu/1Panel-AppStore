@@ -23,11 +23,40 @@
 │   │   ├── README.md
 │   │   └── README_en.md
 │   └── <其他应用>/       # 后续应用使用独立目录
+├── .agents/skills/
+│   └── 1panel-appstore-skills/  # 内置应用打包 Skill
 ├── data.yaml             # 仓库分类与版本元数据
 └── README.md
 ```
 
 每个 `apps/<应用标识>/` 都是一个可以独立复制到 1Panel 本地应用商店的完整安装包。
+
+## 内置 1Panel 应用打包 Skill
+
+仓库内置官方 [1Panel-appstore-skills](https://github.com/1Panel-dev/1Panel-appstore-skills)，位于 `.agents/skills/1panel-appstore-skills/`。Codex 从本仓库目录启动时会自动发现它，因此生成或校验应用包不需要依赖用户目录下的同名 Skill。
+
+Skill 的完整说明见：
+
+- [SKILL.md](./.agents/skills/1panel-appstore-skills/SKILL.md)：给 Codex 使用的打包规则和工作流程
+- [README.zh-CN.md](./.agents/skills/1panel-appstore-skills/README.zh-CN.md)：中文使用说明
+- `scripts/generate_app_package.py`：根据 app spec 生成应用包
+- `scripts/validate_app_package.py`：校验应用包结构和配置
+
+在仓库根目录运行内置校验脚本：
+
+```bash
+python3 .agents/skills/1panel-appstore-skills/scripts/validate_app_package.py apps/sublinkpro
+```
+
+生成新应用时，将 `assets/sample-appspec.json` 复制为自己的 spec，按 `references/appspec.md` 填写后运行：
+
+```bash
+python3 .agents/skills/1panel-appstore-skills/scripts/generate_app_package.py \
+  --spec /path/to/appspec.json \
+  --output apps
+```
+
+当前内置 Skill 来源于上游提交 `d1ff3daca7c9e3167bc61664a431a3ec6b77f587`。升级 Skill 时，请重新同步上游目录并记录新的提交号。
 
 ## 使用前准备
 
