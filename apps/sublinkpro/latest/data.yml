@@ -1,0 +1,141 @@
+additionalProperties:
+  formFields:
+    - envKey: SUBLINK_DSN
+      default: ""
+      labelEn: "Database DSN"
+      labelZh: "数据库 DSN"
+      label:
+        en: "Database DSN"
+        es-es: "DSN de base de datos"
+        ja: "データベース DSN"
+        ms: "DSN Pangkalan Data"
+        pt-br: "DSN do banco de dados"
+        ru: "DSN базы данных"
+        ko: "데이터베이스 DSN"
+        zh-Hant: "資料庫 DSN"
+        zh: "数据库 DSN"
+        tr: "Veritabani DSN"
+      required: false
+      type: text
+    - envKey: SUBLINK_LOG_LEVEL
+      default: info
+      labelEn: "Log Level"
+      labelZh: "日志级别"
+      label:
+        en: "Log Level"
+        es-es: "Nivel de registro"
+        ja: "ログレベル"
+        ms: "Tahap Log"
+        pt-br: "Nivel de log"
+        ru: "Уровень журнала"
+        ko: "로그 수준"
+        zh-Hant: "記錄層級"
+        zh: "日志级别"
+        tr: "Gunluk Seviyesi"
+      required: true
+      type: select
+      values:
+        - label: DEBUG
+          value: debug
+        - label: INFO
+          value: info
+        - label: WARN
+          value: warn
+        - label: ERROR
+          value: error
+        - label: FATAL
+          value: fatal
+    - envKey: SUBLINK_EXPIRE_DAYS
+      default: 14
+      labelEn: "Token Expiration (days)"
+      labelZh: "令牌有效期（天）"
+      label:
+        en: "Token Expiration (days)"
+        es-es: "Caducidad del token (días)"
+        ja: "トークン有効期間（日）"
+        ms: "Tempoh Luput Token (hari)"
+        pt-br: "Expiração do token (dias)"
+        ru: "Срок действия токена (дни)"
+        ko: "토큰 만료 기간(일)"
+        zh-Hant: "權杖有效期（天）"
+        zh: "令牌有效期（天）"
+        tr: "Belirteç Son Kullanma Suresi (gun)"
+      required: true
+      type: number
+    - envKey: SUBLINK_CAPTCHA_MODE
+      default: 2
+      labelEn: "CAPTCHA Mode (1/2/3)"
+      labelZh: "验证码模式（1/2/3）"
+      label:
+        en: "CAPTCHA Mode (1/2/3)"
+        es-es: "Modo CAPTCHA (1/2/3)"
+        ja: "CAPTCHA モード (1/2/3)"
+        ms: "Mod CAPTCHA (1/2/3)"
+        pt-br: "Modo CAPTCHA (1/2/3)"
+        ru: "Режим CAPTCHA (1/2/3)"
+        ko: "CAPTCHA 모드(1/2/3)"
+        zh-Hant: "驗證碼模式（1/2/3）"
+        zh: "验证码模式（1/2/3）"
+        tr: "CAPTCHA Modu (1/2/3)"
+      required: true
+      type: select
+      values:
+        - label: "1 - Disabled"
+          value: "1"
+        - label: "2 - Image CAPTCHA"
+          value: "2"
+        - label: "3 - Cloudflare Turnstile"
+          value: "3"
+    - envKey: SUBLINK_ADMIN_PASSWORD
+      default: 123456
+      labelEn: "Initial Admin Password"
+      labelZh: "初始管理员密码"
+      label:
+        en: "Initial Admin Password"
+        es-es: "Contraseña inicial del administrador"
+        ja: "初期管理者パスワード"
+        ms: "Kata Laluan Pentadbir Awal"
+        pt-br: "Senha inicial do administrador"
+        ru: "Начальный пароль администратора"
+        ko: "초기 관리자 비밀번호"
+        zh-Hant: "初始管理員密碼"
+        zh: "初始管理员密码"
+        tr: "Ilk Yonetici Parolasi"
+      required: true
+      random: true
+      type: password
+    - envKey: SUBLINK_WEB_BASE_PATH
+      default: ""
+      labelEn: "Web Base Path"
+      labelZh: "Web 基础路径"
+      label:
+        en: "Web Base Path"
+        es-es: "Ruta base web"
+        ja: "Web ベースパス"
+        ms: "Laluan Asas Web"
+        pt-br: "Caminho base da Web"
+        ru: "Базовый путь Web"
+        ko: "웹 기본 경로"
+        zh-Hant: "Web 基礎路徑"
+        zh: "Web 基础路径"
+        tr: "Web Temel Yolu"
+      required: false
+      type: text
+    - default: 8000
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number

@@ -1,0 +1,34 @@
+name: SublinkPro
+tags:
+  - 实用工具
+title: "SublinkPro 代理订阅管理与转换工具"
+description: "自托管的代理订阅管理与转换平台。"
+additionalProperties:
+  key: sublinkpro
+  name: SublinkPro
+  tags:
+    - Tool
+  shortDescZh: "自托管的代理订阅管理与转换平台。"
+  shortDescEn: "Self-hosted proxy subscription management and conversion platform."
+  description:
+    en: "Self-hosted proxy subscription management and conversion platform."
+    es-es: "Plataforma autoalojada para gestionar y convertir suscripciones proxy."
+    ja: "プロキシ購読を管理・変換するセルフホスト型プラットフォーム。"
+    ms: "Platform hos kendiri untuk mengurus dan menukar langganan proksi."
+    pt-br: "Plataforma auto-hospedada para gerenciar e converter assinaturas proxy."
+    ru: "Самостоятельно размещаемая платформа для управления и преобразования прокси-подписок."
+    ko: "프록시 구독을 관리하고 변환하는 셀프 호스팅 플랫폼입니다."
+    zh-Hant: "自託管的代理訂閱管理與轉換平台。"
+    zh: "自托管的代理订阅管理与转换平台。"
+    tr: "Proxy aboneliklerini yonetmek ve donusturmek icin kendi barindirdiginiz platform."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
+    - 386
+  website: https://demo.sublinkpro.dpdns.org/
+  github: https://github.com/ZeroDeng01/sublinkPro
+  document: https://github.com/ZeroDeng01/sublinkPro/tree/main/docs
