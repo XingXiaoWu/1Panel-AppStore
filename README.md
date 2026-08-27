@@ -101,16 +101,17 @@ cp -a apps/sublinkpro/. /opt/1panel/resource/apps/local/sublinkpro/
 
 ## 方法二：通过计划任务自动同步
 
-将本仓库发布到 GitHub 后，可以通过 1Panel 计划任务定期同步当前及以后收录的全部应用。
+可以通过 1Panel 计划任务定期同步当前及以后收录的全部应用。
 
-在 1Panel 的“计划任务”中新建 Shell 任务，将下面的 `REPO_URL` 改为本仓库地址：
+在 1Panel 的“计划任务”中新建 Shell 任务。`TARGET_DIR` 是当前使用的安装路径，如实际安装位置不同，请按需修改：
 
 ```bash
 #!/bin/sh
 set -eu
 
-REPO_URL="https://github.com/<owner>/<repository>.git"
-TARGET_DIR="/opt/1panel/resource/apps/local"
+REPO_URL="https://github.com/XingXiaoWu/1Panel-AppStore.git"
+# 修改为自己的 1Panel 本地应用目录
+TARGET_DIR="/home/ubuntu/develop/1panel/1panel/resource/apps/local"
 TMP_DIR="$(mktemp -d)"
 
 trap 'rm -rf "$TMP_DIR"' EXIT INT TERM
