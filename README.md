@@ -9,6 +9,7 @@
 | 应用 | 版本 | 说明 | 上游项目 |
 | --- | --- | --- | --- |
 | [SublinkPro](./apps/sublinkpro/README.md) | 1.2.18、latest | 代理订阅管理与转换平台 | [ZeroDeng01/sublinkPro](https://github.com/ZeroDeng01/sublinkPro) |
+| [Infinite Canvas](./apps/infinite-canvas/README.md) | 0.17.0、latest | 面向图片创作的开源无限画布工作台 | [basketikun/infinite-canvas](https://github.com/basketikun/infinite-canvas) |
 
 ## 仓库结构
 
@@ -22,6 +23,7 @@
 │   │   ├── logo.png
 │   │   ├── README.md
 │   │   └── README_en.md
+│   ├── infinite-canvas/  # 无限画布工作台
 │   └── <其他应用>/       # 后续应用使用独立目录
 ├── .agents/skills/
 │   └── 1panel-appstore-skills/  # 内置应用打包 Skill

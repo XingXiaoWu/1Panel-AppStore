@@ -1,0 +1,31 @@
+name: "Infinite Canvas"
+tags:
+  - Tool
+title: "无限画布 Infinite Canvas"
+description: "自托管的无限画布视觉工作台，整合 AI 图片创作、提示词与媒体素材。"
+additionalProperties:
+  key: infinite-canvas
+  name: "Infinite Canvas"
+  tags:
+    - Tool
+  shortDescZh: "面向图片创作的开源无限画布工作台。"
+  shortDescEn: "Open-source infinite canvas workspace for visual creation."
+  description:
+    en: "Self-hosted visual workspace for infinite canvases, AI image creation, prompts, and media assets."
+    es-es: "Espacio de trabajo visual autoalojado para lienzos infinitos, creación de imágenes con IA, prompts y recursos multimedia."
+    ja: "無限キャンバス、AI画像作成、プロンプト、メディア素材をまとめたセルフホスト型ビジュアルワークスペース。"
+    ms: "Ruang kerja visual hos kendiri untuk kanvas tanpa had, penciptaan imej AI, gesaan dan aset media."
+    pt-br: "Espaço de trabalho visual auto-hospedado para telas infinitas, criação de imagens com IA, prompts e recursos de mídia."
+    ru: "Самостоятельно размещаемое визуальное рабочее пространство с бесконечными холстами, генерацией изображений ИИ, промптами и медиа-ресурсами."
+    ko: "무한 캔버스, AI 이미지 생성, 프롬프트와 미디어 자산을 위한 셀프 호스팅 시각 작업 공간입니다."
+    zh-Hant: "自託管的無限畫布視覺工作空間，整合 AI 圖像創作、提示詞與媒體素材。"
+    zh: "自托管的无限画布视觉工作台，整合 AI 图片创作、提示词与媒体素材。"
+    tr: "Sonsuz tuvaller, yapay zeka ile görüntü oluşturma, istemler ve medya varlıkları için kendi barındırdığınız görsel çalışma alanı."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  github: https://github.com/basketikun/infinite-canvas
+  document: https://github.com/basketikun/infinite-canvas/tree/main/docs/content/docs

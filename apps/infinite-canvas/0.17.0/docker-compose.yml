@@ -1,0 +1,17 @@
+services:
+  app:
+    image: ghcr.io/basketikun/infinite-canvas:v0.17.0
+    container_name: "${CONTAINER_NAME}"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      ANALYTICS_GA4_ID: "${ANALYTICS_GA4_ID}"
+      ANALYTICS_BAIDU_ID: "${ANALYTICS_BAIDU_ID}"
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

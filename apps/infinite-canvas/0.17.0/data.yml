@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - envKey: ANALYTICS_GA4_ID
+      default: ""
+      labelEn: "Google Analytics 4 ID (optional)"
+      labelZh: "Google Analytics 4 ID（可选）"
+      label:
+        en: "Google Analytics 4 ID (optional)"
+        es-es: "ID de Google Analytics 4 (opcional)"
+        ja: "Google Analytics 4 ID（任意）"
+        ms: "ID Google Analytics 4 (pilihan)"
+        pt-br: "ID do Google Analytics 4 (opcional)"
+        ru: "Идентификатор Google Analytics 4 (необязательно)"
+        ko: "Google Analytics 4 ID (선택 사항)"
+        zh-Hant: "Google Analytics 4 ID（選填）"
+        zh: "Google Analytics 4 ID（可选）"
+        tr: "Google Analytics 4 Kimliği (isteğe bağlı)"
+      required: false
+      type: text
+    - envKey: ANALYTICS_BAIDU_ID
+      default: ""
+      labelEn: "Baidu Analytics ID (optional)"
+      labelZh: "百度统计 ID（可选）"
+      label:
+        en: "Baidu Analytics ID (optional)"
+        es-es: "ID de Baidu Analytics (opcional)"
+        ja: "Baidu Analytics ID（任意）"
+        ms: "ID Baidu Analytics (pilihan)"
+        pt-br: "ID do Baidu Analytics (opcional)"
+        ru: "Идентификатор Baidu Analytics (необязательно)"
+        ko: "Baidu Analytics ID (선택 사항)"
+        zh-Hant: "百度統計 ID（選填）"
+        zh: "百度统计 ID（可选）"
+        tr: "Baidu Analytics Kimliği (isteğe bağlı)"
+      required: false
+      type: text
+    - default: 3000
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number
