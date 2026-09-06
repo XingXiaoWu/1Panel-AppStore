@@ -1,0 +1,34 @@
+name: Sub2API
+tags:
+  - AI
+  - Website
+title: "Sub2API AI API 网关平台"
+description: "用于管理和分发订阅的自托管 AI API 网关平台。"
+additionalProperties:
+  key: sub2api
+  name: Sub2API
+  tags:
+    - AI
+    - Website
+  shortDescZh: "一站式开源 AI API 中转与订阅管理平台。"
+  shortDescEn: "Open-source AI API gateway and subscription management platform."
+  description:
+    en: "Self-hosted AI API gateway platform for managing and distributing subscriptions."
+    es-es: "Plataforma autoalojada de puerta de enlace API para gestionar y distribuir suscripciones."
+    ja: "サブスクリプションを管理・配布するセルフホスト型 AI API ゲートウェイプラットフォーム。"
+    ms: "Platform gerbang API AI hos kendiri untuk mengurus dan mengagihkan langganan."
+    pt-br: "Plataforma auto-hospedada de gateway de API de IA para gerenciar e distribuir assinaturas."
+    ru: "Самостоятельно размещаемая платформа шлюза AI API для управления и распределения подписок."
+    ko: "구독을 관리하고 배포하는 셀프 호스팅 AI API 게이트웨이 플랫폼입니다."
+    zh-Hant: "用於管理與分發訂閱的自託管 AI API 閘道平台。"
+    zh: "用于管理和分发订阅的自托管 AI API 网关平台。"
+    tr: "Abonelikleri yonetmek ve dagitmak icin kendi barindirdiginiz AI API ag gecidi platformu."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/Wei-Shaw/sub2api
+  github: https://github.com/Wei-Shaw/sub2api
+  document: https://github.com/Wei-Shaw/sub2api/blob/main/deploy/README.md
