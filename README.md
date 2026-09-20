@@ -10,6 +10,7 @@
 | --- | --- | --- | --- |
 | [SublinkPro](./apps/sublinkpro/README.md) | 1.2.18、latest | 代理订阅管理与转换平台 | [ZeroDeng01/sublinkPro](https://github.com/ZeroDeng01/sublinkPro) |
 | [Infinite Canvas](./apps/infinite-canvas/README.md) | 0.17.0、latest | 面向图片创作的开源无限画布工作台 | [basketikun/infinite-canvas](https://github.com/basketikun/infinite-canvas) |
+| [Clash for Linux](./apps/clash-for-linux/README.md) | latest | Mihomo 代理服务、Web 面板与 Docker/TUN 支持 | [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install) |
 
 ## 仓库结构
 

@@ -1,0 +1,40 @@
+services:
+  mihomo:
+    image: metacubex/mihomo:latest
+    container_name: "${CONTAINER_NAME}"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_CONTROLLER}:9090/tcp"
+      - "${PANEL_APP_PORT_PROXY}:7890/tcp"
+      - "${PANEL_APP_PORT_PROXY}:7890/udp"
+      - "${PANEL_APP_PORT_DNS}:1053/tcp"
+      - "${PANEL_APP_PORT_DNS}:1053/udp"
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - ./data:/root/.config/mihomo
+    command:
+      - -d
+      - /root/.config/mihomo
+      - -f
+      - /root/.config/mihomo/config.yaml
+    labels:
+      createdBy: Apps
+  yacd:
+    image: haishanh/yacd:latest
+    container_name: "${CONTAINER_NAME}-yacd"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80/tcp"
+    labels:
+      createdBy: Apps
+
+networks:
+  1panel-network:
+    external: true

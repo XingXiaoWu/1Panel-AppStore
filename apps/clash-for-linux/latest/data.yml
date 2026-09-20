@@ -1,0 +1,164 @@
+additionalProperties:
+  formFields:
+    - envKey: CLASH_CONFIG_URL
+      default: ""
+      labelEn: "Mihomo Subscription URL"
+      labelZh: "Mihomo 订阅地址"
+      label:
+        en: "Mihomo Subscription URL"
+        es-es: "URL de suscripcion de Mihomo"
+        ja: "Mihomo サブスクリプション URL"
+        ms: "URL Langganan Mihomo"
+        pt-br: "URL de assinatura do Mihomo"
+        ru: "URL подписки Mihomo"
+        ko: "Mihomo 구독 URL"
+        zh-Hant: "Mihomo 訂閱位址"
+        zh: "Mihomo 订阅地址"
+        tr: "Mihomo Abonelik URL'si"
+      required: true
+      type: text
+    - envKey: CLASH_SECRET
+      labelEn: "Web Control Secret"
+      labelZh: "Web 控制密钥"
+      label:
+        en: "Web Control Secret"
+        es-es: "Clave de control web"
+        ja: "Web コントロールシークレット"
+        ms: "Rahsia Kawalan Web"
+        pt-br: "Segredo de controle Web"
+        ru: "Секрет веб-управления"
+        ko: "Web 제어 비밀키"
+        zh-Hant: "Web 控制密鑰"
+        zh: "Web 控制密钥"
+        tr: "Web Kontrol Gizli Anahtari"
+      random: true
+      required: true
+      type: password
+    - envKey: PROXY_USERNAME
+      default: clash
+      labelEn: "Proxy Username"
+      labelZh: "代理用户名"
+      label:
+        en: "Proxy Username"
+        es-es: "Usuario del proxy"
+        ja: "プロキシユーザー名"
+        ms: "Nama Pengguna Proksi"
+        pt-br: "Usuario do proxy"
+        ru: "Имя пользователя прокси"
+        ko: "프록시 사용자 이름"
+        zh-Hant: "代理使用者名稱"
+        zh: "代理用户名"
+        tr: "Proxy Kullanici Adi"
+      required: true
+      type: text
+    - envKey: PROXY_PASSWORD
+      labelEn: "Proxy Password"
+      labelZh: "代理密码"
+      label:
+        en: "Proxy Password"
+        es-es: "Contrasena del proxy"
+        ja: "プロキシパスワード"
+        ms: "Kata Laluan Proksi"
+        pt-br: "Senha do proxy"
+        ru: "Пароль прокси"
+        ko: "프록시 비밀번호"
+        zh-Hant: "代理密碼"
+        zh: "代理密码"
+        tr: "Proxy Parolasi"
+      random: true
+      required: true
+      type: password
+    - envKey: TUN_ENABLE
+      default: "false"
+      labelEn: "TUN Mode"
+      labelZh: "TUN 模式"
+      label:
+        en: "TUN Mode"
+        es-es: "Modo TUN"
+        ja: "TUN モード"
+        ms: "Mod TUN"
+        pt-br: "Modo TUN"
+        ru: "Режим TUN"
+        ko: "TUN 모드"
+        zh-Hant: "TUN 模式"
+        zh: "TUN 模式"
+        tr: "TUN Modu"
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "false"
+        - label: "Enabled"
+          value: "true"
+    - default: 9090
+      envKey: PANEL_APP_PORT_CONTROLLER
+      labelEn: "Mihomo Controller Port"
+      labelZh: "Mihomo 控制端口"
+      label:
+        en: "Mihomo Controller Port"
+        es-es: "Puerto del controlador Mihomo"
+        ja: "Mihomo コントローラーポート"
+        ms: "Port Pengawal Mihomo"
+        pt-br: "Porta do controlador Mihomo"
+        ru: "Порт контроллера Mihomo"
+        ko: "Mihomo 컨트롤러 포트"
+        zh-Hant: "Mihomo 控制埠"
+        zh: "Mihomo 控制端口"
+        tr: "Mihomo Denetleyici Portu"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9091
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "YACD 面板端口"
+      label:
+        en: "YACD Panel Port"
+        es-es: "Puerto del panel YACD"
+        ja: "YACD パネルポート"
+        ms: "Port Panel YACD"
+        pt-br: "Porta do painel YACD"
+        ru: "Порт панели YACD"
+        ko: "YACD 패널 포트"
+        zh-Hant: "YACD 面板埠"
+        zh: "YACD 面板端口"
+        tr: "YACD Panel Portu"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 7890
+      envKey: PANEL_APP_PORT_PROXY
+      labelEn: "Mixed Proxy Port"
+      labelZh: "混合代理端口"
+      label:
+        en: "Mixed Proxy Port"
+        es-es: "Puerto proxy mixto"
+        ja: "混合プロキシポート"
+        ms: "Port Proksi Campuran"
+        pt-br: "Porta proxy mista"
+        ru: "Порт смешанного прокси"
+        ko: "혼합 프록시 포트"
+        zh-Hant: "混合代理埠"
+        zh: "混合代理端口"
+        tr: "Karisik Proxy Portu"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 1053
+      envKey: PANEL_APP_PORT_DNS
+      labelEn: "DNS Port"
+      labelZh: "DNS 端口"
+      label:
+        en: "DNS Port"
+        es-es: "Puerto DNS"
+        ja: "DNS ポート"
+        ms: "Port DNS"
+        pt-br: "Porta DNS"
+        ru: "Порт DNS"
+        ko: "DNS 포트"
+        zh-Hant: "DNS 埠"
+        zh: "DNS 端口"
+        tr: "DNS Portu"
+      required: true
+      rule: paramPort
+      type: number

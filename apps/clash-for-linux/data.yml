@@ -1,0 +1,34 @@
+name: "Clash for Linux"
+tags:
+  - Tool
+  - Security
+title: "Clash for Linux"
+description: "提供 Web 控制面板、订阅配置和可选 TUN 支持的容器化 Mihomo 代理服务。"
+additionalProperties:
+  key: clash-for-linux
+  name: "Clash for Linux"
+  tags:
+    - Tool
+    - Security
+  shortDescZh: "基于 Mihomo 的容器化代理服务与 Web 控制面板。"
+  shortDescEn: "Containerized Mihomo proxy service with a Web control panel."
+  description:
+    en: "Containerized Mihomo proxy service with a Web control panel, subscription-ready configuration, and optional TUN support."
+    es-es: "Servicio proxy Mihomo en contenedor con panel web, configuracion preparada para suscripciones y soporte TUN opcional."
+    ja: "Web コントロールパネル、サブスクリプション対応設定、オプションの TUN を備えたコンテナ版 Mihomo プロキシサービス。"
+    ms: "Perkhidmatan proksi Mihomo dalam kontena dengan panel Web, konfigurasi langganan dan sokongan TUN pilihan."
+    pt-br: "Servico proxy Mihomo em contêiner com painel Web, configuracao pronta para assinaturas e suporte TUN opcional."
+    ru: "Контейнерный прокси-сервис Mihomo с веб-панелью, конфигурацией для подписок и опциональной поддержкой TUN."
+    ko: "웹 제어판, 구독 설정 및 선택적 TUN을 제공하는 컨테이너형 Mihomo 프록시 서비스입니다."
+    zh-Hant: "提供 Web 控制面板、訂閱設定與可選 TUN 支援的容器化 Mihomo 代理服務。"
+    zh: "提供 Web 控制面板、订阅配置和可选 TUN 支持的容器化 Mihomo 代理服务。"
+    tr: "Web kontrol paneli, abonelik hazir yapilandirma ve istege bagli TUN destegi sunan konteynerli Mihomo proxy hizmeti."
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/nelvko/clash-for-linux-install
+  github: https://github.com/nelvko/clash-for-linux-install
+  document: https://github.com/nelvko/clash-for-linux-install/wiki
