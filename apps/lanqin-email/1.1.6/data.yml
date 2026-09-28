@@ -1,0 +1,338 @@
+additionalProperties:
+  formFields:
+    - envKey: LANQIN_PUBLIC_HOSTNAME
+      default: mail.example.com
+      labelEn: "Public Mail Hostname"
+      labelZh: "邮件服务器主机名"
+      required: true
+      type: text
+      label:
+        en: "Public Mail Hostname"
+        es-es: "Nombre de host de correo"
+        ja: "公開メールホスト名"
+        ms: "Nama Hos Mel Awam"
+        pt-br: "Nome do host de e-mail"
+        ru: "Публичное имя почтового сервера"
+        ko: "공개 메일 호스트 이름"
+        zh-Hant: "郵件伺服器主機名稱"
+        zh: "邮件服务器主机名"
+        tr: "Genel E-posta Ana Bilgisayar Adi"
+    - envKey: LANQIN_PUBLIC_BASE_URL
+      default: https://mail.example.com
+      labelEn: "Public Base URL"
+      labelZh: "Webmail 公共地址"
+      required: true
+      type: text
+      label:
+        en: "Public Base URL"
+        es-es: "URL base pública"
+        ja: "公開ベース URL"
+        ms: "URL Asas Awam"
+        pt-br: "URL base pública"
+        ru: "Публичный базовый URL"
+        ko: "공개 기본 URL"
+        zh-Hant: "公開基礎 URL"
+        zh: "Webmail 公共地址"
+        tr: "Genel Temel URL"
+    - envKey: LANQIN_ADMIN_EMAIL
+      default: admin@example.com
+      labelEn: "Initial Admin Email"
+      labelZh: "初始管理员邮箱"
+      required: true
+      type: text
+      label:
+        en: "Initial Admin Email"
+        es-es: "Correo del administrador inicial"
+        ja: "初期管理者メールアドレス"
+        ms: "E-mel Pentadbir Awal"
+        pt-br: "E-mail do administrador inicial"
+        ru: "Почта начального администратора"
+        ko: "초기 관리자 이메일"
+        zh-Hant: "初始管理員電子郵件"
+        zh: "初始管理员邮箱"
+        tr: "Ilk Yonetici E-postasi"
+    - envKey: LANQIN_ADMIN_PASSWORD
+      default: ""
+      labelEn: "Initial Admin Password"
+      labelZh: "初始管理员密码"
+      random: true
+      required: true
+      type: password
+      label:
+        en: "Initial Admin Password"
+        es-es: "Contraseña inicial del administrador"
+        ja: "初期管理者パスワード"
+        ms: "Kata Laluan Pentadbir Awal"
+        pt-br: "Senha inicial do administrador"
+        ru: "Начальный пароль администратора"
+        ko: "초기 관리자 비밀번호"
+        zh-Hant: "初始管理員密碼"
+        zh: "初始管理员密码"
+        tr: "Ilk Yonetici Parolasi"
+    - envKey: LANQIN_ALLOW_INSECURE_HTTP
+      default: "false"
+      labelEn: "Allow Insecure HTTP"
+      labelZh: "允许非 HTTPS 访问"
+      required: true
+      type: select
+      values:
+        - label: Disabled
+          value: "false"
+        - label: Enabled
+          value: "true"
+      label:
+        en: "Allow Insecure HTTP"
+        es-es: "Permitir HTTP inseguro"
+        ja: "安全でない HTTP を許可"
+        ms: "Benarkan HTTP Tidak Selamat"
+        pt-br: "Permitir HTTP inseguro"
+        ru: "Разрешить небезопасный HTTP"
+        ko: "안전하지 않은 HTTP 허용"
+        zh-Hant: "允許不安全的 HTTP"
+        zh: "允许非 HTTPS 访问"
+        tr: "Guvenli Olmayan HTTP'ye Izin Ver"
+    - envKey: LANQIN_OPEN_REGISTRATION
+      default: "false"
+      labelEn: "Open Registration"
+      labelZh: "开放用户注册"
+      required: true
+      type: select
+      values:
+        - label: Disabled
+          value: "false"
+        - label: Enabled
+          value: "true"
+      label:
+        en: "Open Registration"
+        es-es: "Registro abierto"
+        ja: "公開登録"
+        ms: "Pendaftaran Terbuka"
+        pt-br: "Registro aberto"
+        ru: "Открытая регистрация"
+        ko: "공개 회원가입"
+        zh-Hant: "開放註冊"
+        zh: "开放用户注册"
+        tr: "Acik Kayit"
+    - envKey: LANQIN_TWO_FACTOR_ENABLED
+      default: "false"
+      labelEn: "Enable Two-Factor Authentication"
+      labelZh: "启用双因素认证"
+      required: true
+      type: select
+      values:
+        - label: Disabled
+          value: "false"
+        - label: Enabled
+          value: "true"
+      label:
+        en: "Enable Two-Factor Authentication"
+        es-es: "Activar autenticación de dos factores"
+        ja: "二要素認証を有効化"
+        ms: "Dayakan Pengesahan Dua Faktor"
+        pt-br: "Ativar autenticação de dois fatores"
+        ru: "Включить двухфакторную аутентификацию"
+        ko: "2단계 인증 활성화"
+        zh-Hant: "啟用雙因素驗證"
+        zh: "启用双因素认证"
+        tr: "Iki Faktorlu Kimlik Dogrulamayi Etkinlestir"
+    - envKey: LANQIN_EXTERNAL_IMAP_ENABLED
+      default: "false"
+      labelEn: "Enable External IMAP"
+      labelZh: "启用外部 IMAP"
+      required: true
+      type: select
+      values:
+        - label: Disabled
+          value: "false"
+        - label: Enabled
+          value: "true"
+      label:
+        en: "Enable External IMAP"
+        es-es: "Activar IMAP externo"
+        ja: "外部 IMAP を有効化"
+        ms: "Dayakan IMAP Luaran"
+        pt-br: "Ativar IMAP externo"
+        ru: "Включить внешний IMAP"
+        ko: "외부 IMAP 활성화"
+        zh-Hant: "啟用外部 IMAP"
+        zh: "启用外部 IMAP"
+        tr: "Harici IMAP'i Etkinlestir"
+    - envKey: LANQIN_EXTERNAL_IMAP_SECRET_KEY
+      default: ""
+      labelEn: "External IMAP Secret Key"
+      labelZh: "外部 IMAP 加密密钥"
+      random: true
+      required: false
+      type: password
+      label:
+        en: "External IMAP Secret Key"
+        es-es: "Clave secreta de IMAP externo"
+        ja: "外部 IMAP シークレットキー"
+        ms: "Kunci Rahsia IMAP Luaran"
+        pt-br: "Chave secreta do IMAP externo"
+        ru: "Секретный ключ внешнего IMAP"
+        ko: "외부 IMAP 비밀 키"
+        zh-Hant: "外部 IMAP 加密金鑰"
+        zh: "外部 IMAP 加密密钥"
+        tr: "Harici IMAP Gizli Anahtari"
+    - envKey: LANQIN_NOTIFICATION_SECRET_KEY
+      default: ""
+      labelEn: "Notification Encryption Key"
+      labelZh: "通知加密密钥"
+      random: true
+      required: false
+      type: password
+      label:
+        en: "Notification Encryption Key"
+        es-es: "Clave de cifrado de notificaciones"
+        ja: "通知暗号化キー"
+        ms: "Kunci Penyulitan Pemberitahuan"
+        pt-br: "Chave de criptografia de notificações"
+        ru: "Ключ шифрования уведомлений"
+        ko: "알림 암호화 키"
+        zh-Hant: "通知加密金鑰"
+        zh: "通知加密密钥"
+        tr: "Bildirim Sifreleme Anahtari"
+    - envKey: TZ
+      default: Asia/Shanghai
+      labelEn: Timezone
+      labelZh: "时区"
+      required: true
+      type: text
+      label:
+        en: Timezone
+        es-es: "Zona horaria"
+        ja: "タイムゾーン"
+        ms: "Zon Waktu"
+        pt-br: "Fuso horário"
+        ru: "Часовой пояс"
+        ko: "시간대"
+        zh-Hant: "時區"
+        zh: "时区"
+        tr: "Saat Dilimi"
+    - default: 80
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 443
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: "HTTPS Port"
+      labelZh: "HTTPS Port"
+      label:
+        en: "HTTPS Port"
+        es-es: "HTTPS Port"
+        ja: "HTTPS Port"
+        ms: "HTTPS Port"
+        pt-br: "HTTPS Port"
+        ru: "HTTPS Port"
+        ko: "HTTPS Port"
+        zh-Hant: "HTTPS Port"
+        zh: "HTTPS Port"
+        tr: "HTTPS Port"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 25
+      envKey: PANEL_APP_PORT_SMTP
+      labelEn: "SMTP Port"
+      labelZh: "SMTP Port"
+      label:
+        en: "SMTP Port"
+        es-es: "SMTP Port"
+        ja: "SMTP Port"
+        ms: "SMTP Port"
+        pt-br: "SMTP Port"
+        ru: "SMTP Port"
+        ko: "SMTP Port"
+        zh-Hant: "SMTP Port"
+        zh: "SMTP Port"
+        tr: "SMTP Port"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 465
+      envKey: PANEL_APP_PORT_SMTPS
+      labelEn: "SMTPS Port"
+      labelZh: "SMTPS Port"
+      label:
+        en: "SMTPS Port"
+        es-es: "SMTPS Port"
+        ja: "SMTPS Port"
+        ms: "SMTPS Port"
+        pt-br: "SMTPS Port"
+        ru: "SMTPS Port"
+        ko: "SMTPS Port"
+        zh-Hant: "SMTPS Port"
+        zh: "SMTPS Port"
+        tr: "SMTPS Port"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 587
+      envKey: PANEL_APP_PORT_SUBMISSION
+      labelEn: "SMTP Submission Port"
+      labelZh: "SMTP Submission Port"
+      label:
+        en: "SMTP Submission Port"
+        es-es: "SMTP Submission Port"
+        ja: "SMTP Submission Port"
+        ms: "SMTP Submission Port"
+        pt-br: "SMTP Submission Port"
+        ru: "SMTP Submission Port"
+        ko: "SMTP Submission Port"
+        zh-Hant: "SMTP Submission Port"
+        zh: "SMTP Submission Port"
+        tr: "SMTP Submission Port"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 993
+      envKey: PANEL_APP_PORT_IMAPS
+      labelEn: "IMAPS Port"
+      labelZh: "IMAPS Port"
+      label:
+        en: "IMAPS Port"
+        es-es: "IMAPS Port"
+        ja: "IMAPS Port"
+        ms: "IMAPS Port"
+        pt-br: "IMAPS Port"
+        ru: "IMAPS Port"
+        ko: "IMAPS Port"
+        zh-Hant: "IMAPS Port"
+        zh: "IMAPS Port"
+        tr: "IMAPS Port"
+      required: true
+      rule: paramPort
+      type: number
+    - default: 995
+      envKey: PANEL_APP_PORT_POP3S
+      labelEn: "POP3S Port"
+      labelZh: "POP3S Port"
+      label:
+        en: "POP3S Port"
+        es-es: "POP3S Port"
+        ja: "POP3S Port"
+        ms: "POP3S Port"
+        pt-br: "POP3S Port"
+        ru: "POP3S Port"
+        ko: "POP3S Port"
+        zh-Hant: "POP3S Port"
+        zh: "POP3S Port"
+        tr: "POP3S Port"
+      required: true
+      rule: paramPort
+      type: number

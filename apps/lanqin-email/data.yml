@@ -1,0 +1,34 @@
+name: "LanQin Email"
+tags:
+  - Email
+  - Website
+title: "LanQin Email 自托管邮件系统"
+description: "提供现代化 Webmail 与管理后台的自托管邮件系统。"
+additionalProperties:
+  key: lanqin-email
+  name: "LanQin Email"
+  tags:
+    - Email
+    - Website
+  shortDescZh: "提供现代化 Webmail 与管理后台的自托管邮件系统。"
+  shortDescEn: "Self-hosted email system with modern webmail and administration features."
+  description:
+    en: "Self-hosted email system with modern webmail and administration features."
+    es-es: "Sistema de correo electrónico autoalojado con webmail moderno y funciones de administración."
+    ja: "モダンな Web メールと管理機能を備えたセルフホスト型メールシステム。"
+    ms: "Sistem e-mel hos kendiri dengan webmail moden dan ciri pentadbiran."
+    pt-br: "Sistema de e-mail auto-hospedado com webmail moderno e recursos de administração."
+    ru: "Самостоятельно размещаемая почтовая система с современным веб-интерфейсом и панелью администрирования."
+    ko: "현대적인 웹메일과 관리 기능을 제공하는 셀프 호스팅 이메일 시스템입니다."
+    zh-Hant: "提供現代化 Webmail 與管理功能的自託管郵件系統。"
+    zh: "提供现代化 Webmail 与管理后台的自托管邮件系统。"
+    tr: "Modern webmail ve yonetim ozelliklerine sahip kendi barindirdiginiz e-posta sistemi."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://sswx.de
+  github: https://github.com/LanQin996/LanQin-Email
+  document: https://github.com/LanQin996/LanQin-Email/tree/main/deploy
