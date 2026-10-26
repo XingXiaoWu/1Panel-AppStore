@@ -78,10 +78,14 @@ python3 .agents/skills/1panel-appstore-skills/scripts/generate_app_package.py \
 
 ```bash
 mkdir -p /opt/1panel/resource/apps/local
-cp -a apps/. /opt/1panel/resource/apps/local/
+for app in apps/*/; do
+    name="$(basename "$app")"
+    rm -rf "/opt/1panel/resource/apps/local/$name"
+    cp -a "$app" "/opt/1panel/resource/apps/local/$name"
+done
 ```
 
-该命令会同步 `apps/` 下当前及以后收录的全部应用，但不会删除本地应用目录中的其他内容。
+该命令会同步 `apps/` 下当前及以后收录的全部应用，但不会删除本地应用目录中的其他内容。每个应用目录会先整体删除再复制，因此上游删除的文件不会残留在服务器上（残留的 `scripts/init.sh` 会让 1Panel 继续执行旧脚本）。
 
 同步后的目录类似：
 
@@ -100,6 +104,7 @@ cp -a apps/. /opt/1panel/resource/apps/local/
 不需要整个仓库时，可以只复制指定应用。例如只同步 SublinkPro：
 
 ```bash
+rm -rf /opt/1panel/resource/apps/local/sublinkpro
 mkdir -p /opt/1panel/resource/apps/local/sublinkpro
 cp -a apps/sublinkpro/. /opt/1panel/resource/apps/local/sublinkpro/
 ```
@@ -125,12 +130,16 @@ trap 'rm -rf "$TMP_DIR"' EXIT INT TERM
 
 git clone --depth=1 "$REPO_URL" "$TMP_DIR/repository"
 mkdir -p "$TARGET_DIR"
-cp -a "$TMP_DIR/repository/apps/." "$TARGET_DIR/"
+for app in "$TMP_DIR/repository/apps/"*/; do
+    name="$(basename "$app")"
+    rm -rf "${TARGET_DIR:?}/$name"
+    cp -a "$app" "$TARGET_DIR/$name"
+done
 
 echo "第三方应用仓库同步完成"
 ```
 
-建议每天执行一次。脚本只添加或覆盖本仓库同名应用的安装包，不会清空整个 1Panel 本地应用目录。
+建议每天执行一次。脚本只重建本仓库收录的应用包目录，不会清空整个 1Panel 本地应用目录；同名应用目录会先删除再复制，保证上游删除的文件不会残留。
 
 ## 在 1Panel 中安装应用
 
@@ -177,6 +186,24 @@ echo "第三方应用仓库同步完成"
 ### 仓库同步后，已安装应用没有变化
 
 这是正常现象。仓库同步更新的是本地应用安装包；运行中的应用需要在 1Panel 中单独执行升级或重建。
+
+### 安装时报「执行 init 脚本 失败」
+
+1Panel 会执行应用安装包里的 `<版本>/scripts/init.sh`。如果上游仓库已经删除了该脚本，而服务器上的安装包目录仍残留着旧版本，1Panel 仍会执行旧脚本并报错。
+
+排查与处理：
+
+```bash
+# 1) 找出残留的 init.sh 与离线镜像包
+find /opt/1panel -path "*<应用标识>*" \( -name "init.sh" -o -name "*.tar.gz" \) -print
+
+# 2) 确认无误后删除
+find /opt/1panel -path "*<应用标识>*" \( -name "init.sh" -o -name "*.tar.gz" \) -delete
+```
+
+同时重新同步一次应用包（使用上面「方法一」的命令，应用目录会整体重建），然后在 1Panel 中卸载并重新安装该应用。
+
+1Panel 的应用安装包位于 `<1Panel 安装目录>/1panel/resource/apps/local/`，已安装实例位于 `<1Panel 安装目录>/1panel/apps/local/`。删除应用包目录不会影响已安装实例的数据。
 
 ## 相关链接
 
