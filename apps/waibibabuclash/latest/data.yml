@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - envKey: WAILS_PUBLISH_HOST
+      default: 127.0.0.1
+      labelEn: "Management Bind Address"
+      labelZh: "管理面板绑定地址（面板无登录认证）"
+      label:
+        en: "Management Bind Address"
+        es-es: "Dirección de enlace del panel"
+        ja: "管理パネルのバインドアドレス"
+        ms: "Alamat Ikatan Panel"
+        pt-br: "Endereco de vinculacao do painel"
+        ru: "Адрес привязки панели"
+        ko: "관리 패널 바인딩 주소"
+        zh-Hant: "管理面板繫結位址（面板無登入驗證）"
+        zh: "管理面板绑定地址（面板无登录认证）"
+        tr: "Management Bind Address"
+      required: true
+      type: text
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number
+    - envKey: PROXY_NETWORK_ALIAS
+      default: waibibabuclash
+      labelEn: "Proxy Network Alias (unique per installation)"
+      labelZh: "代理网络别名（每次安装须唯一）"
+      label:
+        en: "Proxy Network Alias (unique per installation)"
+        es-es: "Proxy Network Alias (unique per installation)"
+        ja: "Proxy Network Alias (unique per installation)"
+        ms: "Proxy Network Alias (unique per installation)"
+        pt-br: "Proxy Network Alias (unique per installation)"
+        ru: "Proxy Network Alias (unique per installation)"
+        ko: "Proxy Network Alias (unique per installation)"
+        zh-Hant: "代理網路別名（每次安裝須唯一）"
+        zh: "代理网络别名（每次安装须唯一）"
+        tr: "Proxy Network Alias (unique per installation)"
+      required: true
+      type: text

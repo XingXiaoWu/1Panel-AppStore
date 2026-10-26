@@ -1,0 +1,28 @@
+name: WaibibabuClash
+tags:
+  - Tool
+title: "WaibibabuClash ARM64 代理实例管理"
+description: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
+additionalProperties:
+  key: waibibabuclash
+  name: WaibibabuClash
+  tags:
+    - Tool
+  shortDescZh: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
+  shortDescEn: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+  description:
+    en: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    es-es: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    ja: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    ms: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    pt-br: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    ru: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    ko: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    zh-Hant: "用於管理 Mihomo 代理實例、訂閱和設定的自託管面板，僅支援 Linux ARM64。"
+    zh: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
+    tr: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - arm64
