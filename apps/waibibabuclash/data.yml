@@ -1,7 +1,7 @@
 name: WaibibabuClash
 tags:
   - Tool
-title: "WaibibabuClash ARM64 代理实例管理"
+title: "WaibibabuClash Mihomo 多实例管理面板"
 description: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
 additionalProperties:
   key: waibibabuclash
@@ -9,20 +9,22 @@ additionalProperties:
   tags:
     - Tool
   shortDescZh: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
-  shortDescEn: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+  shortDescEn: "Self-hosted panel for managing Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
   description:
-    en: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    es-es: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    ja: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    ms: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    pt-br: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    ru: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
-    ko: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    en: "Self-hosted panel for managing Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    es-es: "Panel autoalojado para gestionar instancias de proxy Mihomo, suscripciones y configuraciones. Solo para Linux ARM64."
+    ja: "Mihomo プロキシインスタンス、サブスクリプション、設定を管理するセルフホスト型パネル。Linux ARM64 のみ対応。"
+    ms: "Panel hos kendiri untuk menguruskan instans proksi Mihomo, langganan dan konfigurasi. Linux ARM64 sahaja."
+    pt-br: "Painel auto-hospedado para gerenciar instâncias de proxy Mihomo, assinaturas e configurações. Somente Linux ARM64."
+    ru: "Автономная панель для управления экземплярами прокси Mihomo, подписками и конфигурациями. Только Linux ARM64."
+    ko: "Mihomo 프록시 인스턴스, 구독 및 구성을 관리하는 셀프 호스팅 패널입니다. Linux ARM64만 지원합니다."
     zh-Hant: "用於管理 Mihomo 代理實例、訂閱和設定的自託管面板，僅支援 Linux ARM64。"
     zh: "用于管理 Mihomo 代理实例、订阅和配置的自托管面板，仅支持 Linux ARM64。"
-    tr: "Self-hosted management panel for Mihomo proxy instances, subscriptions and configurations. Linux ARM64 only."
+    tr: "Mihomo proxy örneklerini, abonelikleri ve yapılandırmaları yönetmek için kendi barındırdığınız panel. Yalnızca Linux ARM64."
   type: tool
   crossVersionUpdate: true
   limit: 0
   architectures:
     - arm64
+  github: https://github.com/XingXiaoWu/waibibabuclash
+  document: https://github.com/XingXiaoWu/waibibabuclash/blob/main/docs/docker.md

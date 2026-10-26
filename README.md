@@ -12,6 +12,7 @@
 | [Infinite Canvas](./apps/infinite-canvas/README.md) | 0.17.0、latest | 面向图片创作的开源无限画布工作台 | [basketikun/infinite-canvas](https://github.com/basketikun/infinite-canvas) |
 | [Clash for Linux](./apps/clash-for-linux/README.md) | latest | Mihomo 代理服务、Web 面板与 Docker/TUN 支持 | [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install) |
 | [LanQin Email](./apps/lanqin-email/README.md) | 1.1.6、latest | 自托管 Webmail 与邮件服务系统 | [LanQin996/LanQin-Email](https://github.com/LanQin996/LanQin-Email) |
+| [WaibibabuClash](./apps/waibibabuclash/README.md) | latest | Mihomo 多实例管理面板（仅 Linux ARM64） | [XingXiaoWu/waibibabuclash](https://github.com/XingXiaoWu/waibibabuclash) |
 
 ## 仓库结构
 
@@ -27,6 +28,7 @@
 │   │   └── README_en.md
 │   ├── infinite-canvas/  # 无限画布工作台
 │   ├── lanqin-email/     # 自托管 Webmail 与邮件服务
+│   ├── waibibabuclash/  # Mihomo 多实例管理面板（仅 Linux ARM64）
 │   └── <其他应用>/       # 后续应用使用独立目录
 ├── .agents/skills/
 │   └── 1panel-appstore-skills/  # 内置应用打包 Skill

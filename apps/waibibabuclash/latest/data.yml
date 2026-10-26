@@ -6,15 +6,15 @@ additionalProperties:
       labelZh: "管理面板绑定地址（面板无登录认证）"
       label:
         en: "Management Bind Address"
-        es-es: "Dirección de enlace del panel"
-        ja: "管理パネルのバインドアドレス"
-        ms: "Alamat Ikatan Panel"
-        pt-br: "Endereco de vinculacao do painel"
-        ru: "Адрес привязки панели"
-        ko: "관리 패널 바인딩 주소"
+        es-es: "Dirección de enlace del panel (sin autenticación)"
+        ja: "管理パネルのバインドアドレス（認証機能なし）"
+        ms: "Alamat Ikatan Panel (tiada pengesahan)"
+        pt-br: "Endereço de vinculação do painel (sem autenticação)"
+        ru: "Адрес привязки панели (без аутентификации)"
+        ko: "관리 패널 바인딩 주소(인증 없음)"
         zh-Hant: "管理面板繫結位址（面板無登入驗證）"
         zh: "管理面板绑定地址（面板无登录认证）"
-        tr: "Management Bind Address"
+        tr: "Panel Bağlantı Adresi (kimlik doğrulama yok)"
       required: true
       type: text
     - default: 8080
@@ -35,20 +35,3 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - envKey: PROXY_NETWORK_ALIAS
-      default: waibibabuclash
-      labelEn: "Proxy Network Alias (unique per installation)"
-      labelZh: "代理网络别名（每次安装须唯一）"
-      label:
-        en: "Proxy Network Alias (unique per installation)"
-        es-es: "Proxy Network Alias (unique per installation)"
-        ja: "Proxy Network Alias (unique per installation)"
-        ms: "Proxy Network Alias (unique per installation)"
-        pt-br: "Proxy Network Alias (unique per installation)"
-        ru: "Proxy Network Alias (unique per installation)"
-        ko: "Proxy Network Alias (unique per installation)"
-        zh-Hant: "代理網路別名（每次安裝須唯一）"
-        zh: "代理网络别名（每次安装须唯一）"
-        tr: "Proxy Network Alias (unique per installation)"
-      required: true
-      type: text
