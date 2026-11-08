@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - envKey: ADMIN_TOKEN
+      labelEn: "Admin Panel Token"
+      labelZh: "管理面板令牌"
+      label:
+        en: "Admin Panel Token"
+        es-es: "Token del panel de administración"
+        ja: "管理パネルトークン"
+        ms: "Token Panel Pentadbir"
+        pt-br: "Token do painel de administração"
+        ru: "Токен панели администратора"
+        ko: "관리 패널 토큰"
+        zh-Hant: "管理面板令牌"
+        zh: "管理面板令牌"
+        tr: "Yönetim Paneli Token"
+      random: true
+      required: true
+      type: password
+    - envKey: TZ
+      labelEn: Timezone
+      labelZh: "时区"
+      label:
+        en: Timezone
+        es-es: "Zona horaria"
+        ja: "タイムゾーン"
+        ms: "Zon waktu"
+        pt-br: "Fuso horário"
+        ru: "Часовой пояс"
+        ko: "시간대"
+        zh-Hant: "時區"
+        zh: "时区"
+        tr: "Saat dilimi"
+      default: Asia/Shanghai
+      required: true
+      type: text
+    - default: 8083
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number

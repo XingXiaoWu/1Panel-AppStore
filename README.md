@@ -13,6 +13,8 @@
 | [Clash for Linux](./apps/clash-for-linux/README.md) | latest | Mihomo 代理服务、Web 面板与 Docker/TUN 支持 | [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install) |
 | [LanQin Email](./apps/lanqin-email/README.md) | 1.1.6、latest | 自托管 Webmail 与邮件服务系统 | [LanQin996/LanQin-Email](https://github.com/LanQin996/LanQin-Email) |
 | [WaibibabuClash](./apps/waibibabuclash/README.md) | latest | Mihomo 多实例管理面板（仅 Linux ARM64） | [XingXiaoWu/waibibabuclash](https://github.com/XingXiaoWu/waibibabuclash) |
+| [Sub2API](./apps/sub2api/README.md) | 0.2.1、latest | 自托管 AI API 网关与订阅分发平台 | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) |
+| [Gemini Web2API](./apps/gemini-web2api-go/README.md) | 4.27.1、latest | Gemini 网页反代 OpenAI 兼容 API | [zexadev/gemini-web2api-go](https://github.com/zexadev/gemini-web2api-go) |
 
 ## 仓库结构
 
@@ -27,8 +29,11 @@
 │   │   ├── README.md
 │   │   └── README_en.md
 │   ├── infinite-canvas/  # 无限画布工作台
+│   ├── clash-for-linux/  # Mihomo 代理服务与 Web 面板
 │   ├── lanqin-email/     # 自托管 Webmail 与邮件服务
 │   ├── waibibabuclash/  # Mihomo 多实例管理面板（仅 Linux ARM64）
+│   ├── sub2api/          # 自托管 AI API 网关
+│   ├── gemini-web2api-go/  # Gemini 网页反代 OpenAI 兼容 API
 │   └── <其他应用>/       # 后续应用使用独立目录
 ├── .agents/skills/
 │   └── 1panel-appstore-skills/  # 内置应用打包 Skill
