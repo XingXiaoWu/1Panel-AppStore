@@ -15,6 +15,7 @@
 | [WaibibabuClash](./apps/waibibabuclash/README.md) | latest | Mihomo 多实例管理面板（仅 Linux ARM64） | [XingXiaoWu/waibibabuclash](https://github.com/XingXiaoWu/waibibabuclash) |
 | [Sub2API](./apps/sub2api/README.md) | 0.2.1、latest | 自托管 AI API 网关与订阅分发平台 | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) |
 | [Gemini Web2API](./apps/gemini-web2api-go/README.md) | 4.27.1、latest | Gemini 网页反代 OpenAI 兼容 API | [zexadev/gemini-web2api-go](https://github.com/zexadev/gemini-web2api-go) |
+| [ACP-Ant](./apps/acp-ant/README.md) | 1.5.1 | Google Antigravity CLI 的 OpenAI/Anthropic 兼容 API 网关 | [czg86389-hub/ACP-Ant](https://github.com/czg86389-hub/ACP-Ant) |
 
 ## 仓库结构
 
@@ -34,6 +35,7 @@
 │   ├── waibibabuclash/  # Mihomo 多实例管理面板（仅 Linux ARM64）
 │   ├── sub2api/          # 自托管 AI API 网关
 │   ├── gemini-web2api-go/  # Gemini 网页反代 OpenAI 兼容 API
+│   ├── acp-ant/            # Google Antigravity CLI API 网关
 │   └── <其他应用>/       # 后续应用使用独立目录
 ├── .agents/skills/
 │   └── 1panel-appstore-skills/  # 内置应用打包 Skill

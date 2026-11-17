@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - envKey: AGY_GATEWAY_KEY
+      labelEn: "API Gateway Key"
+      labelZh: "API 网关密钥"
+      random: true
+      required: true
+      type: password
+      label:
+        en: "API Gateway Key"
+        es-es: "Clave de la API"
+        ja: "API ゲートウェイキー"
+        ms: "Kunci Gerbang API"
+        pt-br: "Chave do gateway de API"
+        ru: "Ключ API-шлюза"
+        ko: "API 게이트웨이 키"
+        zh-Hant: "API 閘道金鑰"
+        zh: "API 网关密钥"
+        tr: "API Ağ Geçidi Anahtarı"
+    - envKey: AGY_PANEL_PASSWORD
+      labelEn: "Panel Admin Password"
+      labelZh: "面板管理员密码"
+      random: true
+      required: true
+      type: password
+      label:
+        en: "Panel Admin Password"
+        es-es: "Contraseña del panel"
+        ja: "パネル管理者パスワード"
+        ms: "Kata Laluan Pentadbir Panel"
+        pt-br: "Senha de administrador do painel"
+        ru: "Пароль администратора панели"
+        ko: "패널 관리자 비밀번호"
+        zh-Hant: "面板管理員密碼"
+        zh: "面板管理员密码"
+        tr: "Panel Yönetici Parolası"
+    - default: 8095
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number

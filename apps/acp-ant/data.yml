@@ -1,0 +1,34 @@
+name: ACP-Ant
+tags:
+  - AI
+  - Tool
+title: "ACP-Ant Google Antigravity API Gateway"
+description: "将 Google 官方 Antigravity CLI 通过 OpenAI 与 Anthropic 兼容 API 提供的自托管网关。"
+additionalProperties:
+  key: acp-ant
+  name: ACP-Ant
+  tags:
+    - AI
+    - Tool
+  shortDescZh: "将 Google 官方 Antigravity CLI 通过 OpenAI 与 Anthropic 兼容 API 提供的自托管网关。"
+  shortDescEn: "Self-hosted gateway that exposes Google's official Antigravity CLI through OpenAI and Anthropic compatible APIs."
+  description:
+    en: "Self-hosted gateway that exposes Google's official Antigravity CLI through OpenAI and Anthropic compatible APIs."
+    es-es: "Pasarela autoalojada que expone la CLI oficial Antigravity de Google mediante APIs compatibles con OpenAI y Anthropic."
+    ja: "Google 公式 Antigravity CLI を OpenAI および Anthropic 互換 API として公開するセルフホスト型ゲートウェイ。"
+    ms: "Gerbang hos kendiri yang mendedahkan CLI Antigravity rasmi Google melalui API serasi OpenAI dan Anthropic."
+    pt-br: "Gateway auto-hospedado que expõe a CLI oficial Antigravity do Google por APIs compatíveis com OpenAI e Anthropic."
+    ru: "Самостоятельно размещаемый шлюз, предоставляющий официальный Antigravity CLI Google через API, совместимые с OpenAI и Anthropic."
+    ko: "Google 공식 Antigravity CLI를 OpenAI 및 Anthropic 호환 API로 제공하는 셀프 호스팅 게이트웨이입니다."
+    zh-Hant: "將 Google 官方 Antigravity CLI 透過 OpenAI 與 Anthropic 相容 API 提供的自託管閘道。"
+    zh: "将 Google 官方 Antigravity CLI 通过 OpenAI 与 Anthropic 兼容 API 提供的自托管网关。"
+    tr: "Google'ın resmi Antigravity CLI'sini OpenAI ve Anthropic uyumlu API'ler üzerinden sunan kendi barındırdığınız ağ geçidi."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/czg86389-hub/ACP-Ant
+  github: https://github.com/czg86389-hub/ACP-Ant
+  document: https://github.com/czg86389-hub/ACP-Ant/blob/main/README.md

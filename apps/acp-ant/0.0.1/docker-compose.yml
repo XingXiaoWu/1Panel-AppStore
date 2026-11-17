@@ -1,0 +1,31 @@
+services:
+  acp-ant:
+    image: 329106954/acp-ant:latest
+    container_name: "${CONTAINER_NAME}"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8095"
+    environment:
+      AGY_GATEWAY_KEY: "${AGY_GATEWAY_KEY}"
+      AGY_PANEL_PASSWORD: "${AGY_PANEL_PASSWORD}"
+      AGY_ROOT: /data
+      AGY_HOST: 0.0.0.0
+      AGY_PORT: 8095
+      ACPANT_INSTALL: docker
+    volumes:
+      - ./data:/data
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - "curl -fsS http://127.0.0.1:8095/healthz >/dev/null || exit 1"
+      interval: 30s
+      timeout: 5s
+      start_period: 120s
+      retries: 3
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
